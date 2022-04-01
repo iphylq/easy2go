@@ -1,3 +1,12 @@
+ssh-keygen -t rsa -C "duan@hust.edu.cn"
+cat ~/.ssh/id_rsa.pub
+ssh -T git@github.com
+
 git config --global user.name "spancemoon"
 git config --global user.email "duan@hust.edu.cn"
 
+#切换为ssh方式push
+git remote -v
+git remote set-url origin git@github.com:iphylq/reponame.git
+git config set
+git push origin
