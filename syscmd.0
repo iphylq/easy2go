@@ -1,0 +1,13 @@
+# 格式化U盘
+# 查找挂载路径
+cat /proc/mounts
+
+# 卸载
+sudo umount /media/sdb-
+
+# 格式化
+sudo mkfs.ntfs /dev/sdb-
+sudo mkfs.ext4 /dev/sdb-
+sudo mkfs.vfat -F 32 /dev/sdb-
+
+

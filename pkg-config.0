@@ -1,0 +1,6 @@
+# 头文件位置
+pkg-config --cflags opencv
+
+# lib库文件位置
+pkg-config --libs opencv
+
