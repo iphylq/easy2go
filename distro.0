@@ -1,0 +1,9 @@
+# show distro version
+lsb_release
+
+	-i, --id		distro ID		Ubuntu
+	-d, --discription	show discription	Ubuntu 20.04.4 LTS
+	-r, --release		show release number	20.04
+	-c, --codename		show code name		focal
+	-a, --all		show all
+	-s, --short		for short format
