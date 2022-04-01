@@ -1,0 +1,3 @@
+git config --global user.name "spancemoon"
+git config --global user.email "duan@hust.edu.cn"
+
