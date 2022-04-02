@@ -1,5 +1,5 @@
-ssh-keygen -t rsa -C "duan@hust.edu.cn"
-cat ~/.ssh/id_rsa.pub
+ssh-keygen -t ed25519 -C "duan@hust.edu.cn"
+cat ~/.ssh/id_ed25519.pub
 ssh -T git@github.com
 
 git config --global user.name "spancemoon"
