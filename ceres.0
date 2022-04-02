@@ -1,0 +1,23 @@
+git clone -b 1.14.x https://github.com/ceres-solver/ceres-solver
+
+sudo apt-get install liblapack-dev libsuitesparse-dev \
+libcxsparse3.1.4 libgflags-dev libgoogle-glog-dev libgtest-dev\
+cmake libgoogle-glog-dev libatlas-base-dev
+
+# eigen3
+
+# static lib
+sudo apt install libsuitesparse-dev
+
+# shared lib
+sudo add-apt-repository ppa:bzindovic/suitesparse-bugfix-1319678
+sudo apt update
+sudo apt install libsuitesparse-dev
+
+cd ceres-solver-1.14.0
+mkdir build
+cmake ..
+make 
+make install
+
+
