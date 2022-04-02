@@ -4,3 +4,8 @@ pkg-config --cflags opencv
 # lib库文件位置
 pkg-config --libs opencv
 
+# version
+pkg-config opencv --modversion
+
+#
+PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig

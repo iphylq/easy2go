@@ -15,4 +15,4 @@ custom_channels:
 	simpleitk: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
 	plotly:	https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
 	caffe2: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
-
+auto_activate_base: false
