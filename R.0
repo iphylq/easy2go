@@ -1,0 +1,18 @@
+# 编译R手册
+sudo apt install texinfo
+sudo apt install texlive texlive-fonts-extra
+wget https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/texlive2022-20220321.iso
+
+sudo apt install openjdk-9-jdk
+wget http://zlib.net/zlib-1.2.12.tar.gz
+./configure && make && sudo make install
+
+sudo apt install libreadine6-dev
+sudo ./configure --prefix=/usr/local/R-3.6.1 --enable-R-shlib
+
+
+
+sudo apt install dirmgr gnupg apt-transport-https ca-certificates software-properties-common
+sudo apt-key adv --keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+sudo add-apt-repository 'deb https://mirrors.tuna.tsinghua.edu.cn/CRAN/bin/linux/ubuntu $(lsb_release -sc)-cran40/'
+sudo apt install --no-install-recommends r-base
