@@ -2,6 +2,9 @@
 # 查找挂载路径
 cat /proc/mounts
 
+# 挂载
+sudo mount -o loop /../*.iso /media/iso/
+
 # 卸载
 sudo umount /media/sdb-
 
@@ -10,4 +13,14 @@ sudo mkfs.ntfs /dev/sdb-
 sudo mkfs.ext4 /dev/sdb-
 sudo mkfs.vfat -F 32 /dev/sdb-
 
+
+
+# 查找可安装包
+sudo apt install aptitude
+sudo aptitude install # 可以自动解决依赖问题
+
+sudo apt install apt-file
+apt-file update
+
+apt-file search lib**
 
