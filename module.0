@@ -1,8 +1,9 @@
 #%Module1.0
 
-conflict anaconda python
 module-whatis "Anaconda3 5.2.0, a python version compiled with many packages."
 
-prepend-path LD_LIBRARY_PATH /opt/anaconda3/lib
-prepend-path LIBRARY_PATH /opt/anaconda3/lib
-prepend-path PATH /opt/anaconda3/bin
+prepend-path MHOME 			/opt/anaconda3/bin
+prepend-path LD_LIBRARY_PATH 		/opt/anaconda3/lib
+prepend-path LIBRARY_PATH 		/opt/anaconda3/lib
+prepend-path C_INCLUDE_PATH		/opt/
+prepend-path CPLUS_INCLUDE_PATH		/opt/
