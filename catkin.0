@@ -1,0 +1,13 @@
+cd catkin_ws
+catkin_make
+
+等价于
+
+cd catkin_ws/src
+catkin_init_workspace
+cd ..
+mkdir build
+cd build
+cmake ../src -DCMAKE_INSTALL_PREFIX=../install -DCATKIN_DEVEL_PREFIX=../devel
+make
+
