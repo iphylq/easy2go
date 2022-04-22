@@ -24,4 +24,8 @@ source /opt/ros/kinetic/setup.bash
 catkin_init_workspace
 
 catkin_make
+# ros manual
 
+rosbag info X.bag
+
+rostopic echo -b X.bag -p /imu0 > imu0.csv
