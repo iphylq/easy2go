@@ -18,6 +18,6 @@ cd ceres-solver-1.14.0
 mkdir build
 cmake ..
 make 
-make install
+sudo make install
 
 
