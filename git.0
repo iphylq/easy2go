@@ -10,3 +10,5 @@ git remote -v
 git remote set-url origin git@github.com:iphylq/reponame.git
 git config set
 git push origin
+
+git clone -b [branch]
