@@ -1,0 +1,20 @@
+# Host
+sudo apt install apt-mirror nginx
+修改 /etc/apt/mirror.list 内部为国内源地址，如tuna.tsinghua.edu.cn/
+
+sudo apt-mirror
+
+sudo vi /etc/nginx/sites-enabled/default 设定服务端口，增加 autoindex on
+
+启动nginx
+
+# Client
+
+vi /etc/apt/source.list 增加本地源地址
+sudo apt update
+
+apt install nginx
+
+sudo apt policy nginx
+
+定时设定更新源 vi /etc/cron.d/apt-mirror
