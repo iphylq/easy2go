@@ -1,0 +1,4 @@
+sudo apt-get install build-essential libgtk2.0-dev libavcodec-dev libavformat-dev libjpeg.dev libtiff4.dev libswscale-dev libjasper-dev  
+
+# turnoff cuda
+cmake -DWITH_CUDA=OFF -DBUILD_SHARED_LIBS=ON
