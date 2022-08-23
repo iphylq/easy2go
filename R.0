@@ -7,6 +7,8 @@ wget https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/texlive202
 # R install
 sudo echo "deb https://mirrors.tuna.tsinghua.edu.cn/CRAN/bin/linux/ubuntu xenial/" >> /etc/apt/sources.list
 sudo apt update
+sudo apt install gfortran build-essential libxt-dev libcurl4-openssl-dev libxml++2.6-dev libssl-dev 
+>install.packages("devtools")
 sudo apt install r-base r-base-dev
 
 # Java
