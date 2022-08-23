@@ -3,6 +3,13 @@ sudo apt install texinfo
 sudo apt install texlive texlive-fonts-extra
 wget https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/texlive2022-20220321.iso
 
+
+# R install
+sudo echo "deb https://mirrors.tuna.tsinghua.edu.cn/CRAN/bin/linux/ubuntu xenial/" >> /etc/apt/sources.list
+sudo apt update
+sudo apt install r-base r-base-dev
+
+# Java
 sudo apt install openjdk-9-jdk
 wget http://zlib.net/zlib-1.2.12.tar.gz
 ./configure && make && sudo make install
