@@ -1,0 +1,7 @@
+module need tcl/tk > 8.4
+module V4.8
+
+sudo ./configure
+make install
+# Init
+echo "source /usr/local/Modules/init/profile.sh" >> /etc/profile
