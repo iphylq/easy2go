@@ -29,3 +29,5 @@ catkin_make
 rosbag info X.bag
 
 rostopic echo -b X.bag -p /imu0 > imu0.csv
+
+rosbag filter input.bag output.bag "t.to_sec() >= 1600421904591 and t.to_sec() <= 1600421922726"
