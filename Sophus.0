@@ -1,0 +1,17 @@
+# Sophus 通常使用模板模式，其依赖于fmt
+# fmt.dev/8.1.1
+
+cd fmt-8.1.1
+mkdir build && cd build
+cmake ..
+make -j8
+sudo make install
+
+# Sophus
+git clone https://github.com/strasdat/Sophus
+cd Sophus
+mkdir build && cd build
+cmake ..
+make -j8
+sudo make install
+

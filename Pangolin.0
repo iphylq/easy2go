@@ -1,0 +1,13 @@
+# Pangolin v0.6 is recommended
+sudo apt install libglew-dev libboost-dev libboost-thread-dev libboost-filesystem-dev 
+sudo apt install ffmpeg libavcodec-dev libavutil-dev libavformat-dev libswscale-dev
+sudo apt install libpng-dev
+
+git clone -b v0.6 https://github.com/stevenlovegrove/Pangolin
+
+cd Pangolin
+mkdir build && cd build
+cmake ..
+make -j8
+sudo make install
+
