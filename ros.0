@@ -1,14 +1,15 @@
 # ROS installation
 
 sudo sh -c 'echo "deb http://mirrors.tuna.tsinghua.edu.cn/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
-sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
+#sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
+curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
 
 sudo apt update && sudo apt upgrade -y
 
-sudo apt install ros-kinetic-desktop-full
+sudo apt install ros-noetic-desktop-full
 
 # 搜索包
-apt-cache search ros-kinetic
+apt-cache search ros-noetic
 
 sudo rosdep init
 
@@ -16,7 +17,7 @@ rosdep update
 
 sudo apt install python-rosinstall
 
-source /opt/ros/kinetic/setup.bash
+source /opt/ros/noetic/setup.bash
 
 
 # catkin
@@ -31,3 +32,7 @@ rosbag info X.bag
 rostopic echo -b X.bag -p /imu0 > imu0.csv
 
 rosbag filter input.bag output.bag "t.to_sec() >= 1600421904591 and t.to_sec() <= 1600421922726"
+
+# 小鱼ros一键安装
+
+wget http://fishros.com/install -O fishros && ./fishros
