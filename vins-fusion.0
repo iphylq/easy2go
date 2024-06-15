@@ -1,0 +1,20 @@
+# ubuntu20
+1. ros noetic
+
+sudo apt install cmake libgoogle-glog-dev libgflags-dev libatlas-base-dev libeigen3-dev libsuitesparse-dev
+
+2. ceres-2.0.0
+wget ceres-solver.org/ceres-solver-2.0.0.tar.gz
+tar xzf ceres-solver-2.0.0.tar.gz
+mkdir ceres-bin && cd ceres-bin
+cmake ../ceres-solver-2.0.0
+make -j4 && make test && sudo make install
+
+3. 适配opencv4的vins-fusion
+
+git clone https://github.com/stevenf7/VINS-Fusion
+
+catkin_make
+
+
+
