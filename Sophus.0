@@ -1,6 +1,6 @@
 # Sophus 通常使用模板模式，其依赖于fmt
 # fmt.dev/8.1.1
-wget https://fmt.dev/8.1.1
+wget https://github.com/fmtlib/fmt/releases/download/8.1.1/fmt-8.1.1.zip
 cd fmt-8.1.1
 mkdir build && cd build
 cmake ..
